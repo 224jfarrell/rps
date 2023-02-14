@@ -1,3 +1,9 @@
+function disable(){
+    document.getElementById('rock2').disabled = true;
+    document.getElementById('paper2').disabled = true;
+    document.getElementById('scissors2').disabled = true;
+    document.getElementById('player2').disabled = true;
+
 function lockInUser(answer){
     document.getElementById('choiceUser').append(answer)
     document.getElementById('rock').disabled = true;
@@ -32,4 +38,24 @@ function lockInUser(answer){
     } else if(answer == 'scissors' && random == 0){
         document.getElementById('result').append('you lost');
     }
+}
+
+function lockInP1(answer){
+    document.getElementById('choiceP1').append("?????")
+    document.getElementById('rock1').disabled = true;
+    document.getElementById('paper1').disabled = true;
+    document.getElementById('scissors1').disabled = true;
+    document.getElementById('player1').disabled = true;
+    document.getElementById('rock2').disabled = false;
+    document.getElementById('paper2').disabled = false;
+    document.getElementById('scissors2').disabled = false;
+    document.getElementById('player2').disabled = false;
+}
+
+function lockInP2(answer){
+    document.getElementById('choiceP2').append("?????")
+    document.getElementById('rock2').disabled = true;
+    document.getElementById('paper2').disabled = true;
+    document.getElementById('scissors2').disabled = true;
+    document.getElementById('player2').disabled = true;
 }
