@@ -40,22 +40,22 @@ function lockInUser(answer){
     }
 }
 
-function lockInP1(answer){
-    document.getElementById('choiceP1').append("?????")
-    document.getElementById('rock1').disabled = true;
-    document.getElementById('paper1').disabled = true;
-    document.getElementById('scissors1').disabled = true;
-    document.getElementById('player1').disabled = true;
-    document.getElementById('rock2').disabled = false;
-    document.getElementById('paper2').disabled = false;
-    document.getElementById('scissors2').disabled = false;
-    document.getElementById('player2').disabled = false;
-}
+// function lockInP1(answer){
+//     document.getElementById('choiceP1').append("?????")
+//     document.getElementById('rock1').disabled = true;
+//     document.getElementById('paper1').disabled = true;
+//     document.getElementById('scissors1').disabled = true;
+//     document.getElementById('player1').disabled = true;
+//     document.getElementById('rock2').disabled = false;
+//     document.getElementById('paper2').disabled = false;
+//     document.getElementById('scissors2').disabled = false;
+//     document.getElementById('player2').disabled = false;
+// }
 
-function lockInP2(answer){
-    document.getElementById('choiceP2').append("?????")
-    document.getElementById('rock2').disabled = true;
-    document.getElementById('paper2').disabled = true;
-    document.getElementById('scissors2').disabled = true;
-    document.getElementById('player2').disabled = true;
-}
+// function lockInP2(answer){
+//     document.getElementById('choiceP2').append("?????")
+//     document.getElementById('rock2').disabled = true;
+//     document.getElementById('paper2').disabled = true;
+//     document.getElementById('scissors2').disabled = true;
+//     document.getElementById('player2').disabled = true;
+// }
