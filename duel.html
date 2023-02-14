@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" href="favicon.png">
+</head>
+<body>
+  <p id="player1">player 1 turn</p>
+    <button onclick="lockInP1('rock')" id="rock">Rock</button>
+    <button onclick="lockInP1('paper')" id="paper">Paper</button>
+    <button onclick="lockInP1('scissors')" id="scissors">Scissor</button>
+    <p>your answer: <span id="choiceP1"></span></p>
+  <p id="player2">player 2 turn</p>
+    <button onclick="lockInP2('rock')" id="rock">Rock</button>
+    <button onclick="lockInP2('paper')" id="paper">Paper</button>
+    <button onclick="lockInP2('scissors')" id="scissors">Scissor</button>
+    <p>your answer: <span id="choiceP2"></span></p>
+    <p id="result">result: </p>
+    <a href="index.html"><button>solo mode</button></a>
+    <script src="script.js"></script>
+</body>
+</html>
