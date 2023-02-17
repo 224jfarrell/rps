@@ -11,14 +11,14 @@
 </head>
 <body>
   <p id="player1">player 1 turn</p>
-    <button onclick="lockInP1(); userInputs('rock')" class="1" id="rock1">Rock</button>
-    <button onclick="lockInP1(); userInputs('paper')" class="1" id="paper1">Paper</button>
-    <button onclick="lockInP1(); userInputs('scissors')" class="1" id="scissors1">Scissor</button>
+    <button onclick="disableP1(); // userInputs('rock')" class="1" id="rock1">Rock</button>
+    <button onclick="disableP1(); // userInputs('paper')" class="1" id="paper1">Paper</button>
+    <button onclick="disableP1(); // userInputs('scissors')" class="1" id="scissors1">Scissor</button>
     <p>your answer: <span id="choiceP1"></span></p>
   <p id="player2">player 2 turn</p>
-    <button onclick="lockInP2(); userInputs(undefined, 'rock')" class="2" id="rock2">Rock</button>
-    <button onclick="lockInP2(); userInputs(undefined, 'paper')" class="2" id="paper2">Paper</button>
-    <button onclick="lockInP2(); userInputs(undefined, 'scissors')" class="2" id="scissors2">Scissor</button>
+    <button onclick="disableP2(); //userInputs(undefined, 'rock')" class="2" id="rock2">Rock</button>
+    <button onclick="disableP2(); //userInputs(undefined, 'paper')" class="2" id="paper2">Paper</button>
+    <button onclick="disableP2(); //userInputs(undefined, 'scissors')" class="2" id="scissors2">Scissor</button>
     <p>your answer: <span id="choiceP2"></span></p>
     <p id="result">result: </p>
     <a href="index.html"><button>solo mode</button></a>
