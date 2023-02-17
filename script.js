@@ -44,7 +44,7 @@ function lockInUser(answer){
 let choice1 = null;
 let choice2 = null;
 
-function disableP1(){
+function lockInP1(answer){
     document.getElementById('choiceP1').append("?????")
     document.getElementById('rock1').disabled = true;
     document.getElementById('paper1').disabled = true;
@@ -54,40 +54,46 @@ function disableP1(){
     document.getElementById('paper2').disabled = false;
     document.getElementById('scissors2').disabled = false;
     document.getElementById('player2').hidden = false;
+    choice1 = answer;
 }
 
-function disableP2(){
+function lockInP2(answer){
     document.getElementById('choiceP2').append("?????")
     document.getElementById('rock2').disabled = true;
     document.getElementById('paper2').disabled = true;
     document.getElementById('scissors2').disabled = true;
     document.getElementById('player2').hidden = true;
+    choice2 = answer;
 }
 
 
 
-// function userInputs(answer1, answer2){
-//     if(answer2){
-//         if(answer1 == 'rock' && answer2 == 'scissors'){
-//             document.getElementById('result').append('p1 win');
-//         } else if(answer1 == 'paper' && answer2 == 'rock'){
-//             document.getElementById('result').append('p1 win');
-//         } else if(answer1 == 'scissors' && answer2 == 'paper'){
-//             document.getElementById('result').append('p1 win');
-//         } else if(answer1 == 'rock' && answer2 == 'rock'){
-//             document.getElementById('result').append('tie');
-//         } else if(answer1 == 'paper' && answer2 == 'paper'){
-//             document.getElementById('result').append('tie');
-//         } else if(answer1 == 'scissors' && answer2 == 'scissors'){
-//             document.getElementById('result').append('tie');
-//         } else if(answer1 == 'rock' && answer2 == 'paper'){
-//             document.getElementById('result').append('p2 win');
-//         } else if(answer1 == 'paper' && answer2 == 'scissors'){
-//             document.getElementById('result').append('p2 win');
-//         } else if(answer1 == 'scissors' && answer2 == 'rock'){
-//             document.getElementById('result').append('p2 win');
-//         }
-//     }
-//     console.log(answer1);
-//     console.log(answer2);
-// }
+function userInputs(choice1, choice2){
+    if(choice2){
+        // document.getElementById('choiceP1').remove('?????');
+        // document.getElementById('choiceP1').append(choice1);
+        // document.getElementById('choiceP2').remove('?????');
+        // document.getElementById('choiceP2').append(choice2);
+        if(choice1 == 'rock' && choice2 == 'scissors'){
+            document.getElementById('result').append('p1 win');
+        } else if(choice1 == 'paper' && choice2 == 'rock'){
+            document.getElementById('result').append('p1 win');
+        } else if(choice1 == 'scissors' && choice2 == 'paper'){
+            document.getElementById('result').append('p1 win');
+        } else if(choice1 == 'rock' && choice2 == 'rock'){
+            document.getElementById('result').append('tie');
+        } else if(choice1 == 'paper' && choice2 == 'paper'){
+            document.getElementById('result').append('tie');
+        } else if(choice1 == 'scissors' && choice2 == 'scissors'){
+            document.getElementById('result').append('tie');
+        } else if(choice1 == 'rock' && choice2 == 'paper'){
+            document.getElementById('result').append('p2 win');
+        } else if(choice1 == 'paper' && choice2 == 'scissors'){
+            document.getElementById('result').append('p2 win');
+        } else if(choice1 == 'scissors' && choice2 == 'rock'){
+            document.getElementById('result').append('p2 win');
+        }
+    }
+    console.log(choice1);
+    console.log(choice2);
+}
