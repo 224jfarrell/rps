@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="rock.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="rock.png">
 </head>
 <body>
   <p id="player1">player 1 turn</p>
-    <button onclick="lockInP1(); userInputs('rock')" class="1" id="rock1">Rock</button>
-    <button onclick="lockInP1(); userInputs('paper')" class="1" id="paper1">Paper</button>
-    <button onclick="lockInP1(); userInputs('scissors')" class="1" id="scissors1">Scissor</button>
-    <p>your answer: <span id="choiceP1"></span></p>
-  <p id="player2">player 2 turn</p>
-    <button onclick="lockInP2(); userInputs(undefined, 'rock')" class="2" id="rock2">Rock</button>
-    <button onclick="lockInP2(); userInputs(undefined, 'paper')" class="2" id="paper2">Paper</button>
-    <button onclick="lockInP2(); userInputs(undefined, 'scissors')" class="2" id="scissors2">Scissor</button>
-    <p>your answer: <span id="choiceP2"></span></p>
+    <button onclick="lockInP1('rock'); userInputs(choice1, choice2)" class="1" id="rock1"><img src="rock.png"><br>Rock</button>
+    <button onclick="lockInP1('paper'); userInputs(choice1, choice2)" class="1" id="paper1"><img src="paper.png"><br>Paper</button>
+    <button onclick="lockInP1('scissors'); userInputs(choice1, choice2)" class="1" id="scissors1"><img src="scissors.png"><br>Scissors</button>
+    <br>
+    <p id="player2">player 2 turn</p>
+    <button onclick="lockInP2('rock'); userInputs(choice1, choice2)" class="2" id="rock2"><img src="rock.png"><br>Rock</button>
+    <button onclick="lockInP2('paper'); userInputs(choice1, choice2)" class="2" id="paper2"><img src="paper.png"><br>Paper</button>
+    <button onclick="lockInP2('scissors'); userInputs(choice1, choice2)" class="2" id="scissors2"><img src="scissors.png"><br>Scissors</button>
+    <br>
+    <p>p1 answer: <span id="choiceP1"></span></p>
+    <p>p2 answer: <span id="choiceP2"></span></p>
     <p id="result">result: </p>
     <a href="index.html"><button>solo mode</button></a>
     <br>
