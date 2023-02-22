@@ -70,10 +70,10 @@ function lockInP2(answer){
 
 function userInputs(choice1, choice2){
     if(choice2){
-        // document.getElementById('choiceP1').remove('?????');
-        // document.getElementById('choiceP1').append(choice1);
-        // document.getElementById('choiceP2').remove('?????');
-        // document.getElementById('choiceP2').append(choice2);
+        document.getElementById('choiceP1').innerHTML = '';
+        document.getElementById('choiceP1').append(choice1);
+        document.getElementById('choiceP2').innerHTML = '';
+        document.getElementById('choiceP2').append(choice2);
         if(choice1 == 'rock' && choice2 == 'scissors'){
             document.getElementById('result').append('p1 win');
         } else if(choice1 == 'paper' && choice2 == 'rock'){
@@ -94,6 +94,4 @@ function userInputs(choice1, choice2){
             document.getElementById('result').append('p2 win');
         }
     }
-    console.log(choice1);
-    console.log(choice2);
 }
