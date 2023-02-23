@@ -1,3 +1,13 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+button {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+body {
+    background-color: #9987ff;
+}
