@@ -54,8 +54,8 @@ function css1(id){
     document.getElementById(id).style.marginTop = "45px";
 }
 
-function css2(id){
-    document.getElementById(id).style.marginTop = "61px";
+function css2(idr, idp, ids){
+    document.getElementById(idr).style.marginTop = "61px";
 }
 
 function lockInP1(answer){
