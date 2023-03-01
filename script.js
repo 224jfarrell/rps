@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(event) {
-    document.getElementById('rock2').disabled = true;
-    document.getElementById('paper2').disabled = true;
-    document.getElementById('scissors2').disabled = true;
-    document.getElementById('player2').hidden = true;
+    document.getElementById('rock2').hidden = true;
+    document.getElementById('paper2').hidden = true;
+    document.getElementById('scissors2').hidden = true;
 })
 
 function lockInUser(answer){
@@ -44,37 +43,24 @@ function lockInUser(answer){
 let choice1 = null;
 let choice2 = null;
 
-function disable(idr, idp, ids){
-    document.getElementById(idr).disabled = true;
-    document.getElementById(idp).disabled = true;
-    document.getElementById(ids).disabled = true;
-}
-
-function css1(id){
-    document.getElementById(id).style.marginTop = "45px";
-}
-
-function css2(idr, idp, ids){
-    document.getElementById(idr).style.marginTop = "61px";
-}
-
 function lockInP1(answer){
     document.getElementById('choiceP1').append("?????")
-    disable('rock1', 'paper1', 'scissors1')
-    css1('rock1', 'paper1,', 'scissors1')
-    document.getElementById('player1').hidden = true;
-    document.getElementById('rock2').disabled = false;
-    document.getElementById('paper2').disabled = false;
-    document.getElementById('scissors2').disabled = false;
-    document.getElementById('player2').hidden = false;
+    document.getElementById('rock1').hidden = true;
+    document.getElementById('paper1').hidden = true;
+    document.getElementById('scissors1').hidden = true;
+    document.getElementById('rock2').hidden = false;
+    document.getElementById('paper2').hidden = false;
+    document.getElementById('scissors2').hidden = false;
+    document.getElementById('player').innerHTML = 'player 2 turn';
     choice1 = answer;
 }
 
 function lockInP2(answer){
     document.getElementById('choiceP2').append(answer)
-    disable('rock2', 'paper2', 'scissors2')
-    css2('rock2', 'paper2,', 'scissors2')
-    document.getElementById('player2').hidden = true;
+    document.getElementById('rock2').disabled = true;
+    document.getElementById('paper2').disabled = true;
+    document.getElementById('scissors2').disabled = true;
+    document.getElementById('player').hidden = true;
     choice2 = answer;
 }
 
